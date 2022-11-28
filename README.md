@@ -38,7 +38,7 @@ pip3 install bcrpyt
 ```sh
 ./run.sh
 ```
-- You will be prompted to enter the password. The default one is "__itmo_fbit__".
+- You will be prompted to enter the password. The default one is "__password__".
 - From there, use the UI as you like. The instructions will come as you use it!
 
 **If you have any questions, you can contact me through _prosecshane@yandex.ru_**
@@ -81,7 +81,7 @@ pip3 install bcrypt
 ```sh
 ./run.sh
 ```
-- Вас попросят ввести пароль. Пароль по умолчанию установлен как "__itmo_fbit__".
+- Вас попросят ввести пароль. Пароль по умолчанию установлен как "__password__".
 - Дальше вы можете использовать программу так, как вам надо. Инструкции, как ей пользоваться, будут объяснены при ииспользовании!
 
 **Если есть вопросы по работе программы, можете писать мне сюда: _prosecshane@yandex.ru_**

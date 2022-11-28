@@ -4,14 +4,15 @@ from os import system
 from sys import argv
 
 # locks or unlocks certain files
-def lock_files(will_lock, file_list=["./assets", "block.tbl", "script.py", "run.sh"]):
+def lock_files(will_lock, file_list=["./assets", "block.tbl", "script.py", "run.sh", "README.md"]):
     for elem in file_list:
+    	elem = elem.strip("\n")
     	if will_lock:
-    	    system(f"sudo chmod {'000' if elem != 'run.sh' else '555'} -R \"{elem}\" >/dev/null 2>&1")
-    	    system(f"sudo chattr +i -R \"{elem}\" >/dev/null 2>&1")
+    	    system(f"sudo chmod {'000' if elem != 'run.sh' else '555'} -R {elem} > /dev/null 2>&1")
+    	    system(f"sudo chattr +i -R {elem} > /dev/null 2>&1")
     	else:
-    	    system(f"sudo chattr -i -R \"{elem}\" >/dev/null 2>&1")
-    	    system(f"sudo chmod 777 -R \"{elem}\" >/dev/null 2>&1")
+    	    system(f"sudo chattr -i -R {elem} > /dev/null 2>&1")
+    	    system(f"sudo chmod 777 -R {elem} > /dev/null 2>&1")
 
 # getting info
 STATE = argv[1]
